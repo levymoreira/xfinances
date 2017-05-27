@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Finances Mobile First Webapp",
   "scripts": {
-    "build": "webpack --config webpack.production.config.js --progress --profile --colors",
-    "start": "webpack-dev-server --progress --profile --colors",
+    "build": "webpack --config scripts/webpack.production.config.js --progress --profile --colors",
+    "start": "webpack-dev-server --progress --profile --colors --config scripts/webpack.config.js",
     "lint": "eslint --ext js --ext jsx src || exit 0",
-    "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors"
+    "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors --config scripts/webpack.config.js"
   },
   "repository": {
     "type": "git",
