@@ -7,10 +7,10 @@ render( <AppContainer><App/></AppContainer>, document.querySelector("#app"));
 
 if (module && module.hot) {
   module.hot.accept('./app.jsx', () => {
-    const App = require('./app.jsx').default;
+    const AppHot = require('./app.jsx').default;
     render(
       <AppContainer>
-        <App/>
+        <AppHot/>
       </AppContainer>,
       document.querySelector("#app")
     );
