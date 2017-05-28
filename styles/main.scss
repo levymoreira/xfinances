@@ -1,3 +1,48 @@
+* {
+  font-size: 13px;
+}
+
+.container {
+  padding: 0;
+}
+
+.table-striped {
+  > tbody > tr:nth-of-type(odd) {
+    background-color: #fcfdfe;
+  }
+}
+
 body {
-  background: #ece7e7;
+  color: #656565;
+  background-color: #f5f6f7;
+  font-size: 13px;
+}
+
+.panel {
+  border-color: #e3e8ed;
+}
+
+.panel-heading {
+  border-color: #e3e8ed;
+  background-color: #f7f8f9;
+}
+
+.btn-white {
+  background-color: #ffff;
+}
+
+.main.padder {
+  padding: 0 10px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.m-b-mini {
+  margin-bottom: 5px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
 }
