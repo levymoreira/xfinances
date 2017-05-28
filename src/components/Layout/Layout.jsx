@@ -7,11 +7,11 @@ class Layout extends React.Component {
     const { location, ...rest} = this.props;
 
     return (
-      <div className='w-full h-full relative overflow-hidden'>
+      <div>
         <Header location={location}/>
 
         {/*Page content will be injected into this div*/}
-        <section id='content' className='content' {...rest} />
+        <section id='content' className='main padder' {...rest} />
 
         <Footer/>
       </div>

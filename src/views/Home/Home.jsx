@@ -17,7 +17,7 @@ class HomePage extends React.Component {
 
 									<Form horizontal>
 										<FormGroup controlId="formHorizontalEmail" className="bg-control">
-											<Col componentclassName={ControlLabel} sm={2}>
+											<Col className={ControlLabel} sm={2}>
 												Email
 											</Col>
 											<Col sm={10}>
@@ -26,7 +26,7 @@ class HomePage extends React.Component {
 										</FormGroup>
 
 										<FormGroup controlId="formHorizontalPassword">
-											<Col componentclassName={ControlLabel} sm={2}>
+											<Col className={ControlLabel} sm={2}>
 												Password
 											</Col>
 											<Col sm={10}>
@@ -69,7 +69,7 @@ class HomePage extends React.Component {
 									<div className="row text-small">
 
 										<div className="col-sm-4 m-b-mini">
-											<DropdownButton bsSize="small" bsStyle="default" title="Action">
+											<DropdownButton bsSize="small" bsStyle="default" title="Action" id="dropDownId">
 												<MenuItem eventKey="1">Any Action</MenuItem>
 												<MenuItem eventKey="2">Another action</MenuItem>
 												<MenuItem eventKey="3" active>Active Item</MenuItem>
