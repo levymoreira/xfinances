@@ -32,9 +32,15 @@ body {
 }
 
 .main.padder {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .row [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .no-padding {
   padding: 0;
 }
@@ -45,4 +51,24 @@ body {
 
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Open Sans',"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+.bg-focus {
+  background: #ffffee !important;
+}
+
+#formHorizontalEmail {
+  background: #ffffee !important;
+}
+
+.btn-toolbar .btn {
+  margin-left : 0;
+}
+
+.margin-left {
+  margin-left: 5px!important;
 }

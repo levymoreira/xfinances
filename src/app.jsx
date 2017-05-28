@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/index.scss';
-import { DropdownButton, MenuItem, Label, Table, Button, ButtonToolbar } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, ControlLabel, Checkbox, Col, DropdownButton, MenuItem, Label, Table, Button, ButtonToolbar } from 'react-bootstrap';
 
 export default class App extends React.Component {
 
@@ -9,95 +9,164 @@ export default class App extends React.Component {
 
     return (
       <div>
-				<ButtonToolbar>
-					<Button bsSize="small" bsStyle="danger">Cancel</Button>
-					<Button bsSize="small" bsStyle="primary">Save</Button>
-				</ButtonToolbar>
 
-				<div className="col-lg-12 no-padding">
-					<section className="panel no-margin-bottom">
-						<header className="panel-heading"> Static Table </header>
-						<div className="panel-body">
+				<div className="clearfix"> <h4><i className="fa fa-edit"></i>Form</h4> </div>
 
-							<div className="row text-small">
+				<div className="row">
+					<div className="col-sm-6">
+						<section className="panel">
+							<div className="panel-body">
 
-								<div className="col-sm-4 m-b-mini">
-									<DropdownButton bsSize="small" bsStyle="default" title="Action">
-										<MenuItem eventKey="1">Any Action</MenuItem>
-										<MenuItem eventKey="2">Another action</MenuItem>
-										<MenuItem eventKey="3" active>Active Item</MenuItem>
-										<MenuItem divider />
-										<MenuItem eventKey="4">Separated link</MenuItem>
-									</DropdownButton>
-								</div>
+								<Form horizontal>
+									<FormGroup controlId="formHorizontalEmail" className="bg-control">
+										<Col componentClass={ControlLabel} sm={2}>
+											Email
+										</Col>
+										<Col sm={10}>
+											<FormControl className="bg-focus" type="email" placeholder="Email" />
+										</Col>
+									</FormGroup>
 
-								<div className="col-sm-4 m-b-mini">
-									<div className="input-group">
-										<input type="text" className="input-sm form-control" placeholder="Search 1"/>
-										<span className="input-group-btn">
-											<Button className="btn-white" bsSize="small">Go!</Button>
-										</span>
+									<FormGroup controlId="formHorizontalPassword">
+										<Col componentClass={ControlLabel} sm={2}>
+											Password
+										</Col>
+										<Col sm={10}>
+											<FormControl type="password" placeholder="Password" />
+										</Col>
+									</FormGroup>
+
+									<FormGroup>
+										<Col smOffset={2} sm={10}>
+											<Checkbox>Remember me</Checkbox>
+										</Col>
+									</FormGroup>
+
+									<FormGroup>
+										<Col smOffset={2} sm={10}>
+											<Button className="btn-white" type="submit">
+												Sign in
+											</Button>
+										</Col>
+									</FormGroup>
+
+									<ButtonToolbar>
+										<Button className="btn-white">Cancel</Button>
+										<Button className="margin-left" bsStyle="primary">Save</Button>
+									</ButtonToolbar>
+
+								</Form>
+
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<div className="row">
+					<div className="col-lg-12">
+						<section className="panel no-margin-bottom">
+							<header className="panel-heading"> Static Table </header>
+							<div className="panel-body">
+
+								<div className="row text-small">
+
+									<div className="col-sm-4 m-b-mini">
+										<DropdownButton bsSize="small" bsStyle="default" title="Action">
+											<MenuItem eventKey="1">Any Action</MenuItem>
+											<MenuItem eventKey="2">Another action</MenuItem>
+											<MenuItem eventKey="3" active>Active Item</MenuItem>
+											<MenuItem divider />
+											<MenuItem eventKey="4">Separated link</MenuItem>
+										</DropdownButton>
 									</div>
-								</div>
 
-								<div className="col-sm-4">
-									<div className="input-group">
-										<input type="text" className="input-sm form-control" placeholder="Search 2"/>
-										<span className="input-group-btn">
-											<Button className="btn-white" bsSize="small">Go!</Button>
-										</span>
+									<div className="col-sm-4 m-b-mini">
+										<div className="input-group">
+											<input type="text" className="input-sm form-control" placeholder="Search 1"/>
+											<span className="input-group-btn">
+												<Button className="btn-white" bsSize="small">Go!</Button>
+											</span>
+										</div>
 									</div>
+
+									<div className="col-sm-4">
+										<div className="input-group">
+											<input type="text" className="input-sm form-control" placeholder="Search 2"/>
+											<span className="input-group-btn">
+												<Button className="btn-white" bsSize="small">Go!</Button>
+											</span>
+										</div>
+									</div>
+
 								</div>
 
 							</div>
+						</section>
 
-						</div>
-					</section>
-
-					<Table striped bordered condensed hover>
-						<thead>
-						<tr>
-							<th>#</th>
-							<th>First Name</th>
-							<th>Last Name</th>
-							<th>Username</th>
-							<th></th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<td>1</td>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-							<td>
-								<Label bsStyle="success">Success</Label>
-							</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-							<td>
-								<Label bsStyle="danger">Danger</Label>
-							</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td colSpan="2">Larry the Bird</td>
-							<td>@twitter</td>
-							<td>
-								<Label bsStyle="danger">Danger</Label>
-							</td>
-						</tr>
-						</tbody>
-					</Table>
+						<Table striped bordered condensed hover>
+							<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+								<th></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+								<td>
+									<Label bsStyle="success">Success</Label>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+								<td>
+									<Label bsStyle="danger">Danger</Label>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td colSpan="2">Larry the Bird</td>
+								<td>@twitter</td>
+								<td>
+									<Label bsStyle="danger">Danger</Label>
+								</td>
+							</tr>
+							</tbody>
+						</Table>
+					</div>
 				</div>
 
-        <h1>It Works!</h1>
+				<h1>It Works!</h1>
         <p>This React project just works including <span className="redBg">module</span> local styles.</p>
         <p>Enjoy!</p>
+
+				<footer id="footer">
+					<div className="text-center padder clearfix">
+						<p>
+							<small>© Finance 2017</small>
+							<br/><br/>
+							<a href="#" className="btn btn-xs btn-circle btn-twitter">
+								<i className="fa fa-twitter"></i>
+							</a>
+							<a href="#" className="btn btn-xs btn-circle btn-facebook">
+								<i className="fa fa-facebook"></i>
+							</a>
+							<a href="#" className="btn btn-xs btn-circle btn-gplus">
+								<i className="fa fa-google-plus"></i>
+							</a>
+						</p>
+					</div>
+				</footer>
+
       </div>
     )
   }
