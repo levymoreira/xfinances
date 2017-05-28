@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/index.scss';
+import '../assets/styles/index.scss';
 import { Form, FormGroup, FormControl, ControlLabel, Checkbox, Col, DropdownButton, MenuItem, Label, Table, Button, ButtonToolbar } from 'react-bootstrap';
 
 export default class App extends React.Component {
@@ -10,6 +10,74 @@ export default class App extends React.Component {
     return (
       <div>
 
+				<header id="header" className="navbar">
+					<ul className="nav navbar-nav navbar-avatar pull-right">
+						<li className="dropdown">
+							<a href="#" className="dropdown-toggle" data-toggle="dropdown">
+								<span className="hidden-xs-only">Mika Sokeil</span>
+								<span className="thumb-small avatar inline">
+									<img src="images/avatar.jpg" alt="Mika Sokeil" className="img-circle"/>
+								</span>
+								<b className="caret hidden-xs-only"></b>
+							</a>
+							<ul className="dropdown-menu pull-right">
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#"><span className="badge bg-danger pull-right">3</span>Notifications</a></li>
+								<li className="divider"></li>
+								<li><a href="docs.html">Help</a></li>
+								<li><a href="signin.html">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+					<a className="navbar-brand" href="#">first</a> <button type="button" className="btn btn-link pull-left nav-toggle visible-xs" data-toggle="class:slide-nav slide-nav-left" data-target="body"> <i className="fa fa-bars fa-lg text-default"></i> </button>
+					<ul className="nav navbar-nav hidden-xs">
+						<li>
+							<div className="m-t m-b-small" id="panel-notifications">
+								<a href="#" className="dropdown-toggle" data-toggle="dropdown">
+									<i className="fa fa-comment-o fa-fw fa-lg text-default"></i>
+									<b className="badge badge-notes bg-danger count-n" style={{display: 'block'}}>5</b>
+								</a>
+								<section className="dropdown-menu m-l-small m-t-mini">
+									<section className="panel panel-large arrow arrow-top">
+										<header className="panel-heading bg-white"><span className="h5"><strong>You have <span className="count-n" style={{display: 'inline'}}>5</span> notifications</strong></span></header>
+										<div className="list-group">
+											<a href="timeline.html" className="media list-group-item" style={{display: 'block'}}>
+												<span className="pull-left thumb-small">
+													<i className="fa fa-clock-o fa-2x text-default"></i>
+												</span>
+												<span className="media-body block m-b-none">Added the timeline, view it here.<br/>
+													<small className="text-muted">1 minute ago</small>
+												</span>
+											</a>
+											<a href="calendar.html" className="media list-group-item" style={{display: 'block'}}>
+												<span className="pull-left thumb-small">
+													<i className="fa fa-calendar fa-2x text-default"></i>
+												</span>
+												<span className="media-body block m-b-none">Added the calendar, Get it.<br/>
+													<small className="text-muted">10 July 13</small>
+												</span>
+											</a>
+											<a href="mail.html" className="media list-group-item" style={{display: 'block'}}>
+												<span className="pull-left thumb-small">
+													<i className="fa fa-envelope-o fa-2x text-default"></i>
+												</span>
+												<span className="media-body block m-b-none">Added the mail app, Check it out.<br/>
+													<small className="text-muted">2 July 13</small></span> </a>
+											<a href="#" className="media list-group-item">
+												<span className="pull-left thumb-small">
+													<img src="images/avatar.jpg" alt="John said"/> className="img-circle"></span> <span className="media-body block m-b-none"> Moved to Bootstrap 3.0<br/> <small className="text-muted">23 June 13</small> </span> </a> <a href="#" className="media list-group-item"> <span className="media-body block m-b-none"> first v.1 (Bootstrap 2.3 based) released<br/> <small className="text-muted">19 June 13</small> </span> </a> </div>
+										<footer className="panel-footer text-small"> <a href="#" className="pull-right"><i className="fa fa-cog"></i></a> <a href="#">See all the notifications</a> </footer>
+									</section>
+								</section>
+							</div>
+						</li>
+						<li>
+							<div className="m-t-small"><a className="btn btn-sm btn-info" data-toggle="modal" href="#modal"><i className="fa fa-fw fa-plus"></i> POST</a></div>
+						</li>
+					</ul>
+				</header>
+
 				<div className="clearfix"> <h4><i className="fa fa-edit"></i>Form</h4> </div>
 
 				<div className="row">
@@ -19,7 +87,7 @@ export default class App extends React.Component {
 
 								<Form horizontal>
 									<FormGroup controlId="formHorizontalEmail" className="bg-control">
-										<Col componentClass={ControlLabel} sm={2}>
+										<Col componentclassName={ControlLabel} sm={2}>
 											Email
 										</Col>
 										<Col sm={10}>
@@ -28,7 +96,7 @@ export default class App extends React.Component {
 									</FormGroup>
 
 									<FormGroup controlId="formHorizontalPassword">
-										<Col componentClass={ControlLabel} sm={2}>
+										<Col componentclassName={ControlLabel} sm={2}>
 											Password
 										</Col>
 										<Col sm={10}>
