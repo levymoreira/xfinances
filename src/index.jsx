@@ -1,16 +1,18 @@
+/** @namespace module */
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import App from './app.jsx';
+import Root from './views/root.jsx';
+import '../assets/styles/index.scss';
 
-render( <AppContainer><App/></AppContainer>, document.querySelector("#app"));
+render(<AppContainer><Root/></AppContainer>, document.querySelector("#app"));
 
 if (module && module.hot) {
-  module.hot.accept('./app.jsx', () => {
-    const AppHot = require('./app.jsx').default;
+  module.hot.accept('./views/root.jsx', () => {
+    const RootHotReload = require('./views/root.jsx').default;
     render(
       <AppContainer>
-        <AppHot/>
+        <RootHotReload/>
       </AppContainer>,
       document.querySelector("#app")
     );

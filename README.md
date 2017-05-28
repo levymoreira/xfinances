@@ -95,3 +95,24 @@ npm run lint
 
 ### Contribute
 Please contribute to the project if you know how to make it better, including this README :)
+
+
+--
+
+Webpack 2
+
+React Router 4 
+https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/quick-start.md
+
+React Router Redux 5 (TODO)
+
+Redux (TODO)
+
+React Bootstrap
+
+Font Awesome
+
+Directiries Structures
+Directory per Component + Directory per View
+
+
