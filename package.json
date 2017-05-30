@@ -1,7 +1,7 @@
 {
-  "name": "finances-frontend",
+  "name": "xfinances-frontend",
   "version": "0.0.1",
-  "description": "Finances Mobile First Webapp",
+  "description": "X Finances Mobile First Webapp",
   "scripts": {
     "build": "webpack --config scripts/webpack.production.config.js --progress --profile --colors",
     "start": "webpack-dev-server --progress --profile --colors --config scripts/webpack.config.js",
@@ -13,7 +13,7 @@
     "url": "https://github.com/alicoding/react-webpack-babel"
   },
   "author": "Levy Moreira",
-  "homepage": "https://github.com/levymoreira/finances",
+  "homepage": "https://github.com/levymoreira/xfinances",
   "dependencies": {
     "react": "15.4.2",
     "react-bootstrap": "^0.31.0",
