@@ -6,7 +6,7 @@ const Footer = () => {
 		<footer id="footer">
 			<div className="text-center padder clearfix">
 				<p>
-					<small>© Finance 2017</small>
+					<small>© X Finances 2017</small>
 					<br/><br/>
 					<a href="#" className="btn btn-xs btn-circle btn-twitter">
 						<i className="fa fa-twitter"></i>

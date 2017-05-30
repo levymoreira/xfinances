@@ -4,9 +4,19 @@ class NavAside extends React.Component {
 
   render() {
     return (
+			<div>
+
+				<div className="navbar navbar-default">
+					<div className="container-fluid">
+						<div className="navbar-header">
+							<a className="navbar-brand" href="#">
+							</a>
+						</div>
+					</div>
+				</div>
 
 			<div className="nav-side-menu">
-				<div className="brand">Finances</div>
+				<div className="brand">X Finances</div>
 
 				<i className="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
@@ -69,6 +79,8 @@ class NavAside extends React.Component {
 						</li>
 					</ul>
 				</div>
+			</div>
+
 			</div>
     );
   }

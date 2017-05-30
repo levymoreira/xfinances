@@ -28,5 +28,16 @@
   <section class="content">
     <section id="app">Loading...</section>
   </section>
+
+	<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+
+	<!-- Menu Toggle Script -->
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#content").toggleClass("toggled");
+		});
+	</script>
+
 </body>
 </html>
